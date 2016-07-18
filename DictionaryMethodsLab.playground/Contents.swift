@@ -68,7 +68,7 @@ var starWarsCharacters = [
 /*: question7
  ### 7. We forgot some characters! There are a lot of ne'er-do-wells in the _Star Wars_ universe, too. Create a variable array called `starWarsGangsters` with the names of these two shady characters: Watto, Jabba the Hutt.
  */
-// write your code here
+var starWarsGangsters = ["Watto", "Jabba the Hutt"]
 
 
 
@@ -76,7 +76,7 @@ var starWarsCharacters = [
 /*: question8
  ### 8. Insert `starWarsGangsters` into your `starWarsCharacters` dictionary with the key "Gangsters". Use subscript notation.
  */
-// write your code here
+starWarsCharacters["Gangsters"] = starWarsGangsters
 
 
 
@@ -84,7 +84,9 @@ var starWarsCharacters = [
 /*: question9
  ### 9. Use the dictionary's `keys` property to print out all the keys in your dictionary to the console, one line at a time (hint: use iteration). Do you see all four of the keys you created above?
  */
-// write your code here
+for key in starWarsCharacters.keys {
+    print(key)
+}
 
 
 
@@ -92,7 +94,7 @@ var starWarsCharacters = [
 /*: question10
  ### 10. Just for good measure, print the number of keys in the dictionary to the console using the `count` method. Do you see `4` printed to the console?
  */
-// write your code here
+print(starWarsCharacters.count)
 
 
 
@@ -100,7 +102,11 @@ var starWarsCharacters = [
 /*: question11
  ### 11. Use an if statement and the dictionary's `isEmpty` property to print "The dictionary is empty!" to the console if it is empty; otherwise, print "There are <Count> items in the dictionary." What do you expect to see in the console? What _do_ you see?
  */
-// write your code here
+if starWarsCharacters.isEmpty {
+    print("The dictionary is empty!")
+} else {
+    print("There are \(starWarsCharacters.count) items in the dictionary.")
+}
 
 
 
