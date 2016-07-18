@@ -11,7 +11,11 @@
 /*: question1
  ### 1. You'll first need to create a few arrays that you will use in subsequent questions in this lab. First, create an `Array` _variable_ called `starWarsHeroes` that contains the names of the heroes of _Star Wars_. These heroes are: Luke Skywalker, Princess Leia, Han Solo, and Rey.
  */
-// write your code here
+var starWarsHeoes = ["Luke Skywalker", "Princess Leia", "Han Solo", "Rey"]
+
+var myPets = ["Mr.Popkins", "Katrina", "Topi", "Zorro"]
+var myFriends = ["Gina", "Grace", "Daniele", "Diona", "Amanda", "Lizzy", "Georgia", "Stephie"]
+
 
 
 
@@ -19,7 +23,8 @@
 /*: question2
  ### 2. Now create another variable `Array` called `starWarsVillains` that contains the villains of _Star Wars_: Darth Vader and Emperor Palpatine.
  */
-// write your code here
+var starWarsVillains = ["Darth Vader", "Emperor Palpatine"]
+
 
 
 
@@ -27,7 +32,7 @@
 /*: question3
  ### 3. Finally, create a third variable `Array` called `starWarsDroids` that contains the droids of _Star Wars_: R2-D2, C-3P0, IG-88, and BB-8 (the cutest droid of them all).
  */
-// write your code here
+var starWarsDroids = ["R2-D2", "C-3P0", "IG-88", "BB-88"]
 
 
 
@@ -35,7 +40,7 @@
 /*: question4
  ### 4. Darn! We forgot to add Kylo Ren, the newest _Star Wars_ villain. Add "Kylo Ren" to `starWarsVillains` using the `append()` method.
  */
-// write your code here
+starWarsVillains.append("Kylo Ren")
 
 
 
@@ -43,7 +48,7 @@
 /*: question5
  ### 5. On second thought, we don't really care that much about IG-88. Remove him from the `starWarsDroids` array using the `removeAtIndex()` method. (What index is "IG-88" at?)
  */
-// write your code here
+starWarsDroids.removeAtIndex(2)
 
 
 
@@ -51,7 +56,11 @@
 /*: question6
  ### 6. Excellent! We want to store these arrays in a dictionary. Create a _variable_ dictionary called `starWarsCharacters` with the following keys: "Heroes", "Villains", and "Droids". Assign the appropriate variables that you created in the previous questions to these keys when you initialize the dictionary.
  */
-// write your code here
+var starWarsCharacters = [
+    "Heroes": starWarsHeroes,
+    "Villains": starWarsVillains,
+    "Droids": starWarsDroids,
+]
 
 
 
