@@ -108,7 +108,7 @@ var starWarsCharacters = [
 /*: question12
  ### 12. We forgot some more pretty important characters. Create another variable array called `starWarsJedi`. Add the names of these important _Star Wars_ Jedi: Yoda, Obi-Wan Kenobi, Mace Windu.
  */
-// write your code here
+var starWarsJedi = ["Yoda", "Obi-Wan Kenobi", "Mace Windu"]
 
 
 
@@ -116,7 +116,11 @@ var starWarsCharacters = [
 /*: question13
  ### 13. Add the variable `starWarsJedi` to the `starWarsCharacter` dictionary using the key "Jedi". Use the `updateValue(_:forKey:)` method to do this. If a new key was added, print "Added Jedi key" to the console; otherwise, print "Updated Jedi key" to the console.
  */
-// write your code here
+if starWarsCharacters.updateValue(starWarsJedi, forKey: "Jedi") == nil {
+    print("Added Jedi key to dictionary")
+} else {
+    print("Updated Jedi key")
+}
 
 
 
@@ -124,7 +128,11 @@ var starWarsCharacters = [
 /*: question14
  ### 14. I can't remember if we added the a key/value pair for "Bounty Hunters" or not. Regardless, let's not worry about them for now. Use the `removeValueForKey()` method to remove "Bounty Hunters" from `starWarsCharacters`. Print the message "Removed Bounty Hunters" if the key was present in the dictionary, or "Bount Hunters did not exist" if it wasn't.
  */
-// write your code here
+if starWarsCharacters.removeValueForKey("Bounty Hunters") != nil {
+    print("Removed Bounty Hunters")
+} else {
+    print("Bounty Hunters did not exist")
+}
 
 
 
@@ -140,7 +148,14 @@ var starWarsCharacters = [
  jedi.append("Aayla Secura")
  }
  */
+if var jedi = starWarsCharacters["Jedi"] {
+    jedi.append("Aayla Secura")
+    starWarsCharacters["Jedi"] = jedi
+}
 
+if let jedi = starWarsCharacters["Jedi"] {
+    print(jedi)
+}
 
 
 
@@ -155,6 +170,11 @@ var starWarsCharacters = [
  }
  }
  */
+if let heroes = starWarsCharacters["Heroes"] {
+    for hero in heroes {
+        print(hero)
+}
+
 
 
 
